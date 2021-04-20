@@ -16,7 +16,6 @@ html,body{
   .container{
     min-height: 80%;
     background:  #7284A8;
-      lightblue;
     width: 80%;
     display: flex;
     flex-wrap: wrap;
@@ -49,7 +48,6 @@ html,body{
   
   .cards{
     background: #5E4C5A;
-      #D81E5B;
     width: 20vw;
     min-width: 200px;
     height: 50vh;
