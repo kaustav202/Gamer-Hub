@@ -8,20 +8,22 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
-      background: linear-gradient(-45deg, #f28482,     #e73c7e 80%);
+      background: linear-gradient(to bottom right, #f28482 20%,#e73c7e 80%);
       background-size: 400% 400%;
       animation: gradient 15s ease infinite;
   }
   
   .container{
-    min-height: 80%;
-    background:  #7284A8;
+    height: 80vh;
+    background:  white;
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.9), rgba(255,255,255,0.3));
     width: 80%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    position: relative;
+    justify-content: flex-end;
     border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(1rem);
   }
   
   @keyframes gradient {
@@ -39,7 +41,7 @@ html,body{
   .topbar{
     background: blue;
     width: 100%;
-    height: 15vh;
+    height: 7vh;
     margin: 15px;
     padding: 5px;
     display: flex;
@@ -48,11 +50,14 @@ html,body{
   
   .cards{
     background: #5E4C5A;
-    width: 20vw;
+    width: 40vw;
     min-width: 200px;
-    height: 50vh;
+    min-height: 50vh;
     margin: 0px 15px 20px;
-    opacity: 0.7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
   }
   
   .info{
@@ -66,4 +71,32 @@ html,body{
     width: 100%;
     height: 100%;
     background: #EAD7D1;
+  }
+  
+  .card{
+    min-width: 90px;
+    background: white;
+    height: 30%;
+    margin: 5px;
+    padding: 3px;
+  }
+  
+  .circle1 ,
+  .circle2 {
+    background: white;
+    background: linear-gradient(to right bottom,
+    rgba(255,255,255,0.8),rgba(255,255,255,0.3));
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    border-radius: 50%;
+  }
+  .circle1{
+    top: 5%;
+    right: 6%;
+  }
+  
+  .circle2{
+    bottom: 5%;
+    left: 6%;
   }
