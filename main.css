@@ -9,13 +9,12 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
-      background: linear-gradient(to bottom right, #65dfc9 20%,#e73c7e 80%);
+      background: linear-gradient(to bottom right, #65dfc9 20%,#ad285bb2 80%);
       background-size: 400% 400%;
       animation: gradient 30s ease infinite;
   }
   
   .container{
-    height: auto;
     background:  white;
     background: linear-gradient(to right bottom,rgba(255,255,255,0.7), rgba(255,255,255,0.3));
     width: 80%;
@@ -39,41 +38,81 @@ html,body{
       }
   }
   
-  .topbar{
-    background: blue;
+  .dashboard{
     width: 100%;
-    height: 7vh;
+    min-height: 10vh;
     margin: 15px;
     padding: 5px;
     display: flex;
     justify-content: flex-start;
-    opacity: 0;
+    background: blue;
   }
-  
+
+.user img{
+  margin:20px;
+}
+.user >h2{
+  text-align: center;
+}
+.empty{
+  width: 280px;;
+}
   .cards{
     background: rgba(255,255,255,0);
     width: 40vw;
     min-width: 300px;
     height: 55vh;
-    margin: 5% 10% 20px 0px;
-    padding-top: 40px;
+    margin: 2% 10% 20px 0px;
+    padding-top: 25px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
   }
   
-  .info{
+  .user{
     height: 100%;
     width: 24%;
-    min-width: 125px;
+    min-width: 100px;
     background: #DD99BB;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   
-  .search{
+  .links{
     width: 100%;
     height: 100%;
-    background: #EAD7D1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: cadetblue;
+  }
+.links :nth-child(1){
+ padding-top: 5px;
+}
+.links :nth-child(2){
+  margin-bottom:0px;
+  padding-bottom: 5px;
+}
+.links :nth-child(2) h2{
+  float: left;
+  bottom: 7px;
+  position: absolute;
+  left: 5px;
+}
+.links :nth-child(3){
+  padding-bottom: 5px;
+}
+.links :nth-child(3) h2{
+  float: left;
+  position: absolute;
+  bottom: 0px;
+}
+  .link{
+    height: 90%;
+    background: cornsilk;
+    position: relative;
   }
   
   .card{
