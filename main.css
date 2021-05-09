@@ -1,15 +1,22 @@
+h1 {
+  opacity: 0.8;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
 html,body{
     height: 100%;
     margin: 0;
   }
   main{
+    font-family: Poppins;
     min-height: 100vh;
     margin: 0;
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-      background: linear-gradient(to bottom right, #65dfc9 20%,#ad285bb2 80%);
+      background: linear-gradient(to bottom right, #b4748cb2 20%,#ad285bb2 80%);
       background-size: 400% 400%;
       animation: gradient 30s ease infinite;
   }
@@ -26,6 +33,19 @@ html,body{
     backdrop-filter: blur(1rem);
   }
   
+  .recents{
+    width: 25vw;
+    padding: 10px;
+    min-height: 33vh;
+    background-color: aqua;
+    margin: 0px 45px 5px 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: center;
+  }
   @keyframes gradient {
       0% {
           background-position: 0% 50%;
@@ -44,8 +64,8 @@ html,body{
     margin: 15px;
     padding: 5px;
     display: flex;
-    justify-content: flex-start;
-    background: blue;
+    justify-content: flex-start;   background: linear-gradient(to right bottom,rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+  
   }
 
 .user img{
@@ -57,8 +77,9 @@ html,body{
 .empty{
   width: 280px;;
 }
+
   .cards{
-    background: rgba(255,255,255,0);
+    background: red;
     width: 40vw;
     min-width: 300px;
     height: 55vh;
@@ -69,12 +90,22 @@ html,body{
     justify-content: space-around;
     align-items: center;
   }
+
+  
+  .card{
+    min-width: 130px;
+    background: white;
+    height: 17vh;
+    margin:17px;
+    padding: 3px;
+    box-shadow: 10px 7px 5px 2px  palevioletred;
+    animation: box-sh 30s ease infinite;
+  }
   
   .user{
     height: 100%;
     width: 24%;
     min-width: 100px;
-    background: #DD99BB;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -86,45 +117,54 @@ html,body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: cadetblue;
   }
 .links :nth-child(1){
- padding-top: 5px;
+ padding-top: 10px;
+ margin-right: 0;
+ padding-right: 0;
+}
+
+.links :nth-child(1)> h2{
+  margin-top: 1px;
+  padding: 0;
 }
 .links :nth-child(2){
   margin-bottom:0px;
-  padding-bottom: 5px;
+  padding-bottom: 0px;
 }
-.links :nth-child(2) h2{
+.links :nth-child(2)> h2{
   float: left;
-  bottom: 7px;
+  bottom: 5px;
   position: absolute;
-  left: 5px;
+  left: 0px;
 }
 .links :nth-child(3){
-  padding-bottom: 5px;
+  padding-left: 10px;
+  position: relative;
 }
-.links :nth-child(3) h2{
+.links :nth-child(3)> h2{
   float: left;
   position: absolute;
   bottom: 0px;
+  line-height: 1;
+  font-size: 22px;
+}
+.links :nth-child(4){
+  position: relative;
+}
+.links :nth-child(4)> h2{
+  float: left;
+  position: absolute;
+  padding-right: 0px;
+  margin-top: 0px;
+  font-size: 22px;
+  margin-bottom: 20px;
 }
   .link{
     height: 90%;
-    background: cornsilk;
     position: relative;
   }
   
-  .card{
-    min-width: 130px;
-    background: white;
-    height: 35%;
-    margin:17px;
-    padding: 3px;
-    box-shadow: 10px 7px 5px 2px  palevioletred;
-    animation: box-sh 30s ease infinite;
-  }
-
   .card:hover{
    transform: scale(1.1);
   }
