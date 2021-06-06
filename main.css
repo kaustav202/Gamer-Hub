@@ -336,11 +336,29 @@ main {
   overflow: hidden;
 }
 
-.progress::after {
+.g_card:nth-child(1) .progress::after {
   content: "";
   position: absolute;
   height: 100%;
   width: 100%;
   background: rgb(206, 174, 174);
-  left: 66%;
+  left: 65%;
+}
+
+.g_card:nth-child(2) .progress::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgb(206, 174, 174);
+  left: 42%;
+}
+
+.g_card:nth-child(3) .progress::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgb(206, 174, 174);
+  left: 77%;
 }
