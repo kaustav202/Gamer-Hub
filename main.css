@@ -98,22 +98,25 @@ main {
 }
 
 .cards {
-  width: 40vw;
+  width: 50vw;
   min-width: 300px;
   height: 55vh;
-  margin: 2% 10% 20px 0px;
+  margin: 6% 5px 20px 0px;
   padding-top: 25px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
+  flex-direction: column;
+  overflow-x: scroll;
+  opacity: 0.9;
 }
 
 .card {
   min-width: 130px;
   background: white;
   height: 17vh;
-  margin: 17px;
+  margin: 17px 50px;
   padding: 3px;
   box-shadow: 10px 7px 5px 2px palevioletred;
   animation: box-sh 30s ease infinite;
@@ -136,7 +139,7 @@ main {
 }
 
 .links :nth-child(1) {
-  padding-top: 15px;
+  padding-top: 18px;
   margin-right: 0;
   padding-right: 0;
 }
@@ -144,6 +147,7 @@ main {
 .links :nth-child(1) > h2 {
   margin-top: 0px;
   padding: 0;
+  font-size: 22px;
 }
 .links :nth-child(2) {
   margin: 0px;
@@ -157,6 +161,7 @@ main {
   margin-bottom: 6px;
   padding: 0px;
   left: 0px;
+  font-size: 22px;
 }
 .links :nth-child(3) {
   padding-left: 0px;
@@ -166,7 +171,7 @@ main {
   margin-top: 8px;
 }
 .links :nth-child(3) > h2 {
-  margin-top: 10px;
+  margin-top: 11px;
   padding: 0px 0px;
   line-height: 0.9;
   font-size: 22px;
@@ -175,7 +180,8 @@ main {
   margin-top: 8px;
 }
 .links :nth-child(4) > h2 {
-  margin-top: 5px;
+  margin-top: 4px;
+  font-size: 22px;
 }
 .links :nth-child(5) > svg {
   margin-top: 5px;
@@ -184,6 +190,7 @@ main {
   margin-top: 4px;
   padding: 0px;
   line-height: 0.9;
+  font-size: 22px;
 }
 .link {
   height: 90%;
@@ -361,4 +368,17 @@ main {
   width: 100%;
   background: rgb(206, 174, 174);
   left: 77%;
+}
+
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.cards::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.cards {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
