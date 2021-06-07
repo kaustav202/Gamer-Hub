@@ -382,3 +382,69 @@ main {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+.search {
+  margin: 20px;
+  position: absolute;
+  right: 54%;
+  top: 240px;
+  z-index: 10;
+}
+
+.search > h3 {
+  font-weight: normal;
+}
+
+.search > h1,
+.search > h3 {
+  color: white;
+  margin-bottom: 15px;
+  text-shadow: 0 1px #0091c2;
+}
+
+.search > div {
+  display: inline-block;
+  position: absolute;
+  filter: drop-shadow(0 1px #0091c2);
+  float: left;
+  left: 10;
+  top: 15px;
+}
+
+.search > div:after {
+  content: "";
+  background: white;
+  width: 4px;
+  height: 14px;
+  position: absolute;
+  top: 20px;
+  right: -2px;
+  transform: rotate(135deg);
+}
+
+.search > div > input {
+  color: white;
+  font-size: 16px;
+  background: transparent;
+  width: 7px;
+  height: 7px;
+  padding: 10px;
+  border: solid 3px white;
+  outline: none;
+  border-radius: 35px;
+  transition: width 0.5s;
+}
+
+.search > div > input::placeholder {
+  color: #efefef;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.search > div > input:focus::placeholder {
+  opacity: 1;
+}
+
+.search > div > input:focus {
+  width:400px;
+}
