@@ -122,6 +122,20 @@ main {
   animation: box-sh 30s ease infinite;
 }
 
+.card_header{
+  position: absolute;
+  bottom: 0px;
+  right: 345px;
+  bottom: 400px;
+  font-family: Sedgwick Ave Display;
+  font-size: 35px;
+  
+  color: deeppink;
+  background: linear-gradient(to bottom right, #e72b70d7 20%, #ad285bb2 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
 
 .user {
   height: 100%;
@@ -264,6 +278,7 @@ main {
   background: linear-gradient(to bottom right, #e72b70cb 20%, #ad285bb2 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
 }
 .status input {
   background: linear-gradient(
@@ -338,6 +353,12 @@ main {
   border-radius: 1rem;
   position: relative;
   overflow: hidden;
+}
+
+.g1:hover .progress{
+  background-color: rgba(255, 20, 145, 0.596);
+  opacity: 0.9;
+  tr
 }
 
 .g_card:nth-child(1) .progress::after {
@@ -468,9 +489,9 @@ main {
 }
 .search-wrapper .input-holder .search-icon span::before {
   width: 4px;
-  height: 11px;
+  height: 10px;
   left: 6px;
-  top: 12px;
+  top: 15px;
   border-radius: 2px;
   background:#dd246285;
 }
@@ -495,7 +516,7 @@ main {
   transition-delay: 0.2s;
 }
 .search-wrapper.active .close {
-  right:-35px;
+  right:-30px;
   transform: rotate(45deg);
   transition: all .6s cubic-bezier(0.000, 0.105, 0.035, 1.570);
   transition-delay: 0.5s;

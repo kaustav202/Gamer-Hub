@@ -9,4 +9,4 @@ function searchToggle(obj, evt) {
         // clear input
         container.find('.search-input').val('');
     }
-}
+};
