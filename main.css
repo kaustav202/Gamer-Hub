@@ -355,10 +355,21 @@ main {
   overflow: hidden;
 }
 
-.g1:hover .progress{
-  background-color: rgba(255, 20, 145, 0.596);
-  opacity: 0.9;
-  tr
+.g1:hover .progress,
+.g2:hover .progress,
+.g3:hover .progress{
+  background-color: rgba(241, 54, 154, 0.863);
+  opacity: 0.85;
+  transition: background-color 0.85s ease-in;
+  
+}
+
+.g1:hover .percentage,
+.g2:hover .percentage,
+.g3:hover .percentage{
+  
+  background-color: rgba(241, 54, 154, 0.863);
+  transition: background-color 0.85s ease-in;
 }
 
 .g_card:nth-child(1) .progress::after {
@@ -539,4 +550,3 @@ main {
   left: 0px;
   top: 10px;
 }
-
