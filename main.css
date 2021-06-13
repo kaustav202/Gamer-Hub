@@ -122,11 +122,11 @@ main {
   animation: box-sh 30s ease infinite;
 }
 
-.card_header{
+#cardheader{
   position: absolute;
   bottom: 0px;
   right: 16%;
-  bottom: 400px;
+  bottom: 56.6%;
   font-family: Sedgwick Ave Display;
   font-size: 35px;
   width: 25vw;
@@ -134,7 +134,12 @@ main {
   background: linear-gradient(to bottom right, #e72b70d7 20%, #ad285bb2 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  letter-spacing: 1.5px;
 
+}
+
+.status:first-child{
+  
 }
 
 .user {
