@@ -125,11 +125,11 @@ main {
 .card_header{
   position: absolute;
   bottom: 0px;
-  right: 345px;
+  right: 16%;
   bottom: 400px;
   font-family: Sedgwick Ave Display;
   font-size: 35px;
-  
+  width: 25vw;
   color: deeppink;
   background: linear-gradient(to bottom right, #e72b70d7 20%, #ad285bb2 80%);
   -webkit-background-clip: text;
@@ -345,31 +345,51 @@ main {
   -webkit-text-fill-color: transparent;
 }
 
+.g1:hover .percentage,
+.g2:hover .percentage,
+.g3:hover .percentage{
+  
+  background-color: rgba(241, 54, 101, 0.863);
+  transition: background-color 0.85s ease-in;
+}
+
+
 .progress {
-  background: linear-gradient(to bottom right, #c46286b2 20%, #ad285bb2 80%);
+  background: transparent;
   width: 90%;
   height: 14%;
   margin: 10px;
   border-radius: 1rem;
   position: relative;
   overflow: hidden;
+  transition: background-color 1s;
+ 
+}
+
+
+.g1:hover .progress::before,
+.g2:hover .progress::before,
+.g3:hover .progress::before{
+  
+  opacity: 0;
 }
 
 .g1:hover .progress,
 .g2:hover .progress,
 .g3:hover .progress{
-  background-color: rgba(241, 54, 154, 0.863);
-  opacity: 0.85;
-  transition: background-color 0.85s ease-in;
-  
+  opacity: 1;
+  background: linear-gradient( to bottom left, #f01565ad 20%,#8d1d468e 80%);
 }
-
-.g1:hover .percentage,
-.g2:hover .percentage,
-.g3:hover .percentage{
-  
-  background-color: rgba(241, 54, 154, 0.863);
-  transition: background-color 0.85s ease-in;
+.g_cards:nth-child(1) .progress::before,
+.g_cards:nth-child(2) .progress::before,
+.g_cards:nth-child(3) .progress::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom right, #c46286b2 20%, #ad285bb2 80%);
+  left: 0%;
+  transition: opacity 0s;
 }
 
 .g_card:nth-child(1) .progress::after {
