@@ -24,14 +24,14 @@ main {
 }
 
 .container {
-  margin-top: 15px;
+  height: 96vh;
   background: white;
   background: linear-gradient(
     to right bottom,
     rgba(255, 255, 255, 0.7),
     rgba(255, 255, 255, 0.3)
   );
-  width: 80%;
+  width: 82%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -43,7 +43,7 @@ main {
 .recents {
   width: 20vw;
   padding: 10px;
-  min-height: 33vh;
+  min-height: 30vh;
   margin: 0px 45px 5px 10px;
   display: flex;
   flex-direction: column;
@@ -51,6 +51,14 @@ main {
   text-align: center;
   align-items: center;
   justify-content: space-evenly;
+  margin-bottom: 8vh;
+}
+
+@media (max-width: 1340px){
+  .recents{
+    height: 22vh;
+    margin-top: 12%;
+  }
 }
 @keyframes gradient {
   0% {
@@ -100,9 +108,9 @@ main {
 .cards {
   width: 50vw;
   min-width: 300px;
-  height: 45vh;
+  height: 50vh;
   margin: 12.5% 5px 20px 0px;
-  padding-top: 25px;
+  padding-top: 0px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
