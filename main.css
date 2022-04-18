@@ -116,10 +116,10 @@ main {
 	content: '';
 	display: block;
 	position: absolute;
-	top: 49.3%;
+	top: 48%;
 	left: 38.3%;
-	width: 60px;
-	height: 46%;
+	width: 50px;
+	height: 47.5%;
 	z-index: 10;
 	background-image: linear-gradient(
 		to left,
@@ -144,13 +144,13 @@ main {
 	cursor: pointer;
 	position: relative;
 	border-radius: 1rem;
-  border: solid 4px rgba(194, 25, 166, 0.507);
+	border: solid 4px rgba(194, 25, 166, 0.507);
 }
 
-.card img{
-  border-radius: 0.7rem;
-  margin: 0;
-  padding: 0;
+.card img {
+	border-radius: 0.7rem;
+	margin: 0;
+	padding: 0;
 }
 
 #cardheader {
@@ -284,7 +284,7 @@ main {
 		box-shadow: 10px 7px 5px 2px rgba(219, 108, 150, 0.533);
 	}
 
-  70% {
+	70% {
 		box-shadow: 10px 7px 5px 2px rgba(150, 83, 204, 0.533);
 	}
 	90% {
