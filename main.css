@@ -137,12 +137,20 @@ main {
 	background: white;
 	height: 17vh;
 	margin: 17px 50px;
-	padding: 3px;
+	padding: 0px;
 	box-shadow: 10px 7px 5px 2px palevioletred;
 	animation: box-sh 30s ease infinite;
 	transition: transform 0.22s ease-out 0s;
 	cursor: pointer;
 	position: relative;
+	border-radius: 1rem;
+  border: solid 4px rgba(194, 25, 166, 0.507);
+}
+
+.card img{
+  border-radius: 0.7rem;
+  margin: 0;
+  padding: 0;
 }
 
 #cardheader {
@@ -269,16 +277,17 @@ main {
 
 @keyframes box-sh {
 	0% {
-		box-shadow: 10px 7px 5px 2px rgba(209, 78, 203, 0.533);
-	}
-	30% {
-		box-shadow: 10px 7px 5px 2px rgba(221, 56, 180, 0.548);
+		box-shadow: 10px 7px 5px 2px rgba(209, 78, 192, 0.533);
 	}
 
-	70% {
-		box-shadow: 10px 7px 5px 2px #a8d8;
+	55% {
+		box-shadow: 10px 7px 5px 2px rgba(219, 108, 150, 0.533);
 	}
-	88% {
+
+  70% {
+		box-shadow: 10px 7px 5px 2px rgba(150, 83, 204, 0.533);
+	}
+	90% {
 		box-shadow: 10px 7px 10px 2px #d375e683;
 	}
 }
