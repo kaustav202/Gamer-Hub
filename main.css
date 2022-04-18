@@ -124,14 +124,14 @@ main {
   content: '';
   display: block;
   position: absolute;
-  top: 50%;
+  top: 49.3%;
   left: 38.3%;
-  width: 50px;
-  height: 45%;
+  width: 60px;
+  height: 46%;
   background-image: linear-gradient(to left, rgba(202, 23, 134, 0) 0% , rgba(255, 255, 255, 0.3) 60% , rgba(255, 255, 255, 0.9) 100%);
   pointer-events: none;
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1.7rem;
+  border-bottom-left-radius: 1.7rem;
 }
 
 
