@@ -147,6 +147,34 @@ main {
 	border: solid 4px rgba(194, 25, 166, 0.507);
 }
 
+.swipe {
+	background-image: url("https://i.postimg.cc/sxWbnkZs/Untitled-design-17.png");
+	display: block;
+	width: 150px;
+	height: 170px;
+	background-size: cover;
+	left: -50px;
+	float: left;
+	position: absolute;
+	top: 64%;
+	margin-left: 78%;
+	z-index: 50;
+	opacity: 0;
+}
+
+@keyframes slide {
+	100% {
+		margin-left: 60%;
+		opacity: 1;
+	}
+}
+
+.cards:hover .swipe{
+  animation: slide 3s 2;
+}
+
+
+
 .card img {
 	border-radius: 0.7rem;
 	margin: 0;

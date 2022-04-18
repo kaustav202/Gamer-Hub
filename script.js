@@ -15,3 +15,9 @@ function searchToggle(obj, evt) {
     }
 
 }
+
+function swipedestruct(obj,e){
+    setTimeout(function(){
+        document.querySelector('div.swipe').style.display = 'none';
+    }, 6000)
+}
