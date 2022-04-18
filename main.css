@@ -145,6 +145,8 @@ main {
   padding: 3px;
   box-shadow: 10px 7px 5px 2px palevioletred;
   animation: box-sh 30s ease infinite;
+  transition: transform 0.25s ease-out 0s;
+  cursor: pointer;
 }
 
 #cardheader{
