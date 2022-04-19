@@ -137,14 +137,15 @@ main {
 	background: white;
 	height: 17vh;
 	margin: 17px 50px;
-	padding: 0px;
+	padding: 2px;
 	box-shadow: 10px 7px 5px 2px palevioletred;
 	animation: box-sh 30s ease infinite;
-	transition: transform 0.22s ease-out 0s;
+	transition: transform 0.25s ease-in-out 0.05s;
 	cursor: pointer;
 	position: relative;
 	border-radius: 1rem;
-	border: solid 4px rgba(194, 25, 166, 0.507);
+	border: solid 2px #FFD9D4;
+	background-color: #f168b8a1;
 }
 
 .swipe {
@@ -156,7 +157,7 @@ main {
 	left: -50px;
 	float: left;
 	position: absolute;
-	top: 64%;
+	top: 70%;
 	margin-left: 78%;
 	z-index: 50;
 	opacity: 0;
@@ -169,11 +170,9 @@ main {
 	}
 }
 
-.cards:hover .swipe{
-  animation: slide 3s 2;
+.cards:hover .swipe {
+	animation: slide 2.5s 2;
 }
-
-
 
 .card img {
 	border-radius: 0.7rem;
@@ -295,7 +294,7 @@ main {
 	opacity: 0;
 }
 .card:hover {
-	transform: scale(1.1);
+	transform: scale(1.1) translate(-12px, -3px);
 	filter: brightness(104%);
 }
 
@@ -305,18 +304,18 @@ main {
 
 @keyframes box-sh {
 	0% {
-		box-shadow: 10px 7px 5px 2px rgba(209, 78, 192, 0.533);
+		box-shadow: 7px 4px 5px 2px rgba(209, 78, 192, 0.533);
 	}
 
 	55% {
-		box-shadow: 10px 7px 5px 2px rgba(219, 108, 150, 0.533);
+		box-shadow: 7px 4px 5px 2px rgba(219, 108, 150, 0.533);
 	}
 
 	70% {
-		box-shadow: 10px 7px 5px 2px rgba(150, 83, 204, 0.533);
+		box-shadow: 7px 4px 5px 2px rgba(150, 83, 204, 0.533);
 	}
 	90% {
-		box-shadow: 10px 7px 10px 2px #d375e683;
+		box-shadow: 7px 4px 10px 2px #d375e683;
 	}
 }
 
