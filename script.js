@@ -26,6 +26,13 @@ function swipedestruct(obj,e){
 //     console.log("I'm pressed!!");
 // })
 
+document.getElementsByClassName('search-icon')[0].addEventListener('click',()=>{
+    let si = document.querySelector('input.search-input');
+    setTimeout(()=>{
+        si.focus();
+    },500);
+})
+
 document.querySelector('.search-input').addEventListener('input', ()=>{
     let keyword = document.querySelector('input.search-input').value;
     if (keyword == ''){
