@@ -14,32 +14,39 @@ function searchToggle(obj, evt) {
         }, 400);
     }
 
-}
+};
 
 function swipedestruct(obj,e){
     setTimeout(function(){
         document.querySelector('div.swipe').style.display = 'none';
     }, 6000)
-}
+};
 
 // document.getElementsByClassName('search-icon')[0].addEventListener('click', ()=>{
 //     console.log("I'm pressed!!");
 // })
 
-document.getElementsByClassName('search-icon')[0].addEventListener('click', ()=>{
+document.querySelector('.search-input').addEventListener('input', ()=>{
     let keyword = document.querySelector('input.search-input').value;
+    if (keyword == ''){
+        console.log("Empty String Input Test");
+        resetDOM();
+    }
     updateDOM(keyword);
-})
+});
 
-document.querySelector('span.close').addEventListener('click',()=>{
+document.querySelector('span.close').addEventListener('click',resetDOM);
 
+function resetDOM (){
+
+    console.log('in resetdom !!');
     const cardNames = document.getElementsByClassName('card');
     let cardsCollection = [...cardNames];
     temp = cardsCollection.map((card) => card.style.display = 'block');
     document.querySelector('.cards').style["flexWrap"] = 'wrap';
     document.querySelector('.cards').style["flexDirection"] = 'column';
 
-})
+};
 
 function updateDOM(key){
 
@@ -66,12 +73,15 @@ function updateDOM(key){
             }
         }
         
+        document.querySelector('.cards').style["flexWrap"] = 'nowrap';
+        document.querySelector('.cards').style["flexDirection"] = 'row';
+        
+
         for(let x = 0; x<matchIndices.length; x++){
     
             let t = matchIndices[x] + 3;
             let rem = document.querySelector(`.cards :nth-child(${t})`);
-            document.querySelector('.cards').style["flexWrap"] = 'nowrap';
-            document.querySelector('.cards').style["flexDirection"] = 'row';
+            
             rem.style.display = 'block';
         }
     }
