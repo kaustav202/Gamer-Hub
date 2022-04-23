@@ -37,6 +37,11 @@ document.getElementsByClassName('search-icon')[0].addEventListener('click',()=>{
     setTimeout(()=>{
         si.focus();
     },500);
+    
+    setTimeout(()=>{
+        document.querySelector('.search-wrapper .input-holder .search-input').style.border = 'solid 3px #c978ee83';
+        document.querySelector('.search-wrapper .input-holder .search-input').style.borderBottom = 'none';
+    },400)
 })
 
 document.querySelector('.search-input').addEventListener('input', ()=>{

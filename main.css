@@ -523,7 +523,8 @@ main {
 	padding-bottom: 15px;
 	background: transparent;
 	box-sizing: border-box;
-	border: solid 3px #c978ee83;
+  border: none;
+  border-bottom: none;
   border-radius: 50px;
 	outline: none;
 	font-family: "open-sans", Arial, Verdana;
