@@ -17,11 +17,17 @@ function searchToggle(obj, evt) {
 };
 
 function swipedestruct(obj,e){
+
+    console.log("swipedestruct activated!!");
+
     setTimeout(function(){
         document.querySelector('div.swipe').style.display = 'none';
-    }, 6000)
+        console.log("swipe destroyed.");
+    }, 6000);
+    document.querySelector('#par').removeEventListener('mouseover',swipedestruct);
 };
 
+document.querySelector('#par').addEventListener('mouseover',swipedestruct);
 // document.getElementsByClassName('search-icon')[0].addEventListener('click', ()=>{
 //     console.log("I'm pressed!!");
 // })
