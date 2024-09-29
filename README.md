@@ -5,6 +5,8 @@ active games, games catalogue and also search functionality.
 
 </br>
 
+### Hacktoberfest 2024
+
 ## View Live
 
 ### https://gamers-hub-portal.vercel.app/
