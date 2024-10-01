@@ -6,8 +6,6 @@ An online gaming portal made with beautiful glassmorphic UI and clean design. Fe
 active games, games catalogue and also search functionality.
 </br>
 
-![image](https://hacktoberfest.com/)
-
 ## View Live
 
 ### https://gamers-hub-portal.vercel.app/
