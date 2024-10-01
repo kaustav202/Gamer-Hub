@@ -1,13 +1,16 @@
 # Gamer Hub
 
+###   HACKTOBERFEST 2024
+
 An online gaming portal made with beautiful glassmorphic UI and clean design. Features for incorporating user profile, social media handles, 
 active games, games catalogue and also search functionality.
 </br>
 
+![image](https://github.com/user-attachments/assets/81c43b7f-f1f5-4c5a-ae96-fa8794abf3d4)
+
 ## View Live
 
 ### https://gamers-hub-portal.vercel.app/
-
 
 
 ## How to get started with contributions
