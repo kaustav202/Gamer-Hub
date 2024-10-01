@@ -6,7 +6,7 @@ An online gaming portal made with beautiful glassmorphic UI and clean design. Fe
 active games, games catalogue and also search functionality.
 </br>
 
-![image](https://github.com/user-attachments/assets/81c43b7f-f1f5-4c5a-ae96-fa8794abf3d4)
+![image](https://hacktoberfest.com/)
 
 ## View Live
 
